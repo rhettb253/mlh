@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+img {
+    border-radius: 50%;
+    height: 12.25rem;
+    width: 12rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+ul{
+    /* position:absolute;
+    bottom: 0.25rem;
+    right: 1rem; */
+}
+
+li{
+    display: inline-block;
+    padding: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(231, 3, 3);
+}
+
+a:hover {
+    color: blue;
+    font-size: 1.1rem;
+}
