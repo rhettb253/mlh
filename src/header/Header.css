@@ -12,31 +12,20 @@ img {
     width: 12rem;
 }
 
-h2{
-    font-size: 1.5rem;
+h3{
     font-style: italic;
 }
 
-ul{
-    /* position:absolute;
-    bottom: 0.25rem;
-    right: 1rem; */
+h2{
+    font-size: 1.5rem;
 }
 
-li{
-    display: inline-block;
-    padding: 1rem;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 400;
-}
-
-a{
+a {
     text-decoration: none;
-    color: rgb(231, 3, 3);
+    color: rgb(3, 189, 246);
 }
 
 a:hover {
-    color: blue;
-    font-size: 1.1rem;
+    color: rgb(231, 3, 3);
+    font-size: 1rem;
 }

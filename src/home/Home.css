@@ -1,0 +1,41 @@
+/* Blurb */
+.blurb {
+    background-color: rgb(230, 229, 225);
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.blurb h1 {
+    width: fit-content;
+    background-image: linear-gradient(to right, rgb(3, 189, 246) 0 35%, yellow 65% 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+/* GetConnected */
+.getconnected {
+    background-color: rgb(230, 229, 225);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+h3.h3 {
+    width: fit-content;
+    background-image: linear-gradient(to right, rgb(3, 189, 246) 0 35%, yellow 65% 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.question1 h2 {
+    text-align: center;
+}
+
+.question1 p {
+    display: inline;
+    text-align: right;
+}
+
+.connect-text {
+    text-align: center;
+}
