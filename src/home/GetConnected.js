@@ -14,18 +14,18 @@ function GetConnected(props) {
         if (props.clientWantsTo === "buy") {
             let form = <Buyer
                 buyerInfo={props.buyerInfo}
-                newBuyerHandler={props.newBuyerHandler} />;
+                updateBuyerInfo={props.updateBuyerInfo} />;
             return form;
         } else if (props.clientWantsTo === 'sell') {
             let form = <Seller
                 sellerInfo={props.sellerInfo}
-                newSellerHandler={props.newSellerHandler} />;
+                updateSellerInfo={props.updateSellerInfo} />;
             return form;
         }
     }
 
     return (
-        <div className='getconnected'>
+        <div className='getconnected shadow-3-strong'>
             <h3 className='h3'>Let's Get Connected!</h3>
             <div className="question1">
                 <h2>Tell me why you are here:</h2>

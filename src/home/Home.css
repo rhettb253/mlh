@@ -1,9 +1,16 @@
+/* Home */
+#warning {
+    color: rgb(231, 3, 3);
+    margin-top: 1rem;
+}
+
 /* Blurb */
 .blurb {
-    background-color: rgb(230, 229, 225);
+    /* background-color: rgb(230, 229, 225); */
+    background-image: linear-gradient(to bottom, rgb(230, 229, 225) 0 3.5rem, rgb(252, 251, 248) 3.5rem 100%);
     border-radius: 1rem;
     margin: 2rem 0;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .blurb h1 {
@@ -13,11 +20,16 @@
     color: transparent;
 }
 
+.blurb p {
+    margin-bottom: 0.5rem;
+}
+
 /* GetConnected */
 .getconnected {
-    background-color: rgb(230, 229, 225);
+    /* background-color: rgb(230, 229, 225); */
+    background-image: linear-gradient(to bottom, rgb(230, 229, 225) 0 2.75rem, rgb(252, 251, 248) 2.75rem 100%);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 h3.h3 {
@@ -39,3 +51,31 @@ h3.h3 {
 .connect-text {
     text-align: center;
 }
+
+.timeframeTextArea {
+    margin-left: 2rem;
+}
+
+/* Buyer */
+#buyerButton {
+    font-size: 0.9rem;
+    background-color: rgb(3, 189, 246);
+    border: 1px solid rgb(3, 189, 246);
+    transition: all 0.4s ease;
+    transform: scale(1);
+}
+
+#buyerButton:hover {
+    background-color: rgb(3, 189, 246);
+    border: 1px solid rgb(3, 189, 246);
+    transform: scale(1.1) perspective(1px);
+}
+
+#buyerButton:active {
+    background-color: rgb(3, 189, 246);
+    border: 1px solid rgb(3, 189, 246);
+    transform: scale(0.9) perspective(1px);
+}
+
+/* Seller */
+

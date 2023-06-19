@@ -51,9 +51,9 @@ function Home() {
   );
 
   function changeClientWants(buysell) {
-    setState({
-      clientWantsTo: buysell
-    });
+      setState({
+        clientWantsTo: buysell
+      })
   }
 
   function updateBuyerInfo(event) {
@@ -77,6 +77,7 @@ function Home() {
       }
     } else if (event.target.timeframeTextArea) {
       setState({
+        clientWantsTo: 'buy',
         buyer: {
           fullName: event.target.fullName.value,
           emailAddress: event.target.email.value,
@@ -110,6 +111,7 @@ function Home() {
       }
     } else {
       setState({
+        clientWantsTo: 'buy',
         buyer: {
           fullName: event.target.fullName.value,
           emailAddress: event.target.email.value,
@@ -164,6 +166,7 @@ function Home() {
       }
     } else if (event.target.timeframeTextArea) {
       setState({
+        clientWantsTo: 'sell',
         seller: {
           fullName: event.target.fullName.value,
           emailAddress: event.target.email.value,
@@ -199,6 +202,7 @@ function Home() {
       }
     } else {
       setState({
+        clientWantsTo: 'sell',
         seller: {
           fullName: event.target.fullName.value,
           emailAddress: event.target.email.value,
@@ -240,13 +244,13 @@ function Home() {
         <Blurb />
       </MDBRow>
       <MDBRow>
-          <GetConnected
+        <GetConnected
           clientWantsTo={state.clientWantsTo}
           onChange={changeClientWants}
           buyerInfo={state.buyer}
-          newBuyerHandler={updateBuyerInfo}
+          updateBuyerInfo={updateBuyerInfo}
           sellerInfo={state.seller}
-          newSellerHandler={updateSellerInfo} />
+          updateSellerInfo={updateSellerInfo} />
       </MDBRow>
     </MDBContainer>
   );

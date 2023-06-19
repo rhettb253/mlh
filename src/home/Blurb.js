@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Blurb() {
     return (
-        <div className="blurb">
+        <div className="blurb shadow-3-strong">
         <h1>MALLORY LAYNE WEITZ</h1>
         <div>
             <p>Hi!</p>
