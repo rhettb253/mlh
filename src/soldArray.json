@@ -1,0 +1,382 @@
+[
+    {
+        "address": "Address: 801 19th Lane W",
+        "price": "Sell Price: $2,700,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 3,490",
+        "beds": "Beds: 4",
+        "baths": "Baths: 3",
+        "path": "801.webp",
+        "title": "Kirkland, WA"
+    },
+    {
+        "address": "Address: 5617 45th Ave SW",
+        "price": "Sell Price: $1,058,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,620",
+        "beds": "Beds: 3",
+        "baths": "Baths: 2.5",
+        "path": "5617.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 2731 E Mason Lake Dr E",
+        "price": "Sell Price: $950,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,065",
+        "beds": "Beds: 2",
+        "baths": "Baths: 1.75",
+        "path": "2731.webp",
+        "title": "Grapeview, WA"
+    },
+    {
+        "address": "Address: 7412 Gatewood Rd SW",
+        "price": "Sell Price: $870,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,320",
+        "beds": "Beds: 3",
+        "baths": "Baths: 1.75",
+        "path": "7412.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 14515 SE 278th Place",
+        "price": "Sell Price: $701,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,320",
+        "beds": "Beds: 5",
+        "baths": "Baths: 2.5",
+        "path": "14515.webp",
+        "title": "Kent, WA"
+    },
+    {
+        "address": "Address: 211 Boston St #A",
+        "price": "Sell Price: $1,270,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,740",
+        "beds": "Beds: 3",
+        "baths": "Baths: 3.25",
+        "path": "211.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 10003 8th Ave NW",
+        "price": "Sell Price: $735,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,440",
+        "beds": "Beds: 3",
+        "baths": "Baths: 1.75",
+        "path": "10003.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 9303 30th Ave SW",
+        "price": "Sell Price: $670,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,470",
+        "beds": "Beds: 3",
+        "baths": "Baths: 2",
+        "path": "9303.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 2005 Broadway E",
+        "price": "Sell Price: $3,650,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 4,790",
+        "beds": "Beds: 4",
+        "baths": "Baths: 4",
+        "path": "2005.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 6421 49th Ave SW",
+        "price": "Sell Price: $743,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,180",
+        "beds": "Beds: 2",
+        "baths": "Baths: 1",
+        "path": "6421.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 4831 Beach Dr SW",
+        "price": "Sell Price: $2,162,500",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,890",
+        "beds": "Beds: 3",
+        "baths": "Baths: 3.25",
+        "path": "4831.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 4542 22nd Ave SW",
+        "price": "Sell Price: $1,125,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,900",
+        "beds": "Beds: 4",
+        "baths": "Baths: 3.25",
+        "path": "4542.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 4534 22nd Ave SW",
+        "price": "Sell Price: $1,125,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,900",
+        "beds": "Beds: 4",
+        "baths": "Baths: 3.25",
+        "path": "4534.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 415 Alpine Way",
+        "price": "Sell Price: $480,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,340",
+        "beds": "Beds: 3",
+        "baths": "Baths: 1.75",
+        "path": "415.webp",
+        "title": "Kent, WA"
+    },
+    {
+        "address": "Address: 1214 SW Myrtle St",
+        "price": "Sell Price: $428,500",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,120",
+        "beds": "Beds: 3",
+        "baths": "Baths: 1.75",
+        "path": "1214.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 861 E Creekside Dr",
+        "price": "Sell Price: $495,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,344",
+        "beds": "Beds: 2",
+        "baths": "Baths: 1.75",
+        "path": "861.webp",
+        "title": "Belfair, WA"
+    },
+    {
+        "address": "Address: 15248 SE 142 Place",
+        "price": "Sell Price: $540,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 800",
+        "beds": "Beds: 2",
+        "baths": "Baths: 1",
+        "path": "15248.webp",
+        "title": "Renton, WA"
+    },
+    {
+        "address": "Address: 9716 79th St SW",
+        "price": "Sell Price: $450,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,469",
+        "beds": "Beds: 3",
+        "baths": "Baths: 1.75",
+        "path": "9716.webp",
+        "title": "Lakewood, WA"
+    },
+    {
+        "address": "Address: 3009 13th Ave W",
+        "price": "Sell Price: $1,325,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,120",
+        "beds": "Beds: 3",
+        "baths": "Baths: 1.75",
+        "path": "3009.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 13209 Newcastle Way #B-303",
+        "price": "Sell Price: $305,000",
+        "type": "Type: Condo",
+        "sqft": "SqFt: 705",
+        "beds": "Beds: 1",
+        "baths": "Baths: 1",
+        "path": "13209.webp",
+        "title": "Newcastle, WA"
+    },
+    {
+        "address": "Address: 5514 65th Ave W",
+        "price": "Sell Price: $685,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 3,652",
+        "beds": "Beds: 5",
+        "baths": "Baths: 2.75",
+        "path": "5514.webp",
+        "title": "University Place, WA"
+    },
+    {
+        "address": "Address: 7736 38th Ave SW",
+        "price": "Sell Price: $935,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,180",
+        "beds": "Beds: 4",
+        "baths": "Baths: 2",
+        "path": "7736.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 4605 S 150th St",
+        "price": "Sell Price: $550,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,280",
+        "beds": "Beds: 3",
+        "baths": "Baths: 2",
+        "path": "4605.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 23903 137th Ave SE",
+        "price": "Sell Price: $605,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,520",
+        "beds": "Beds: 3",
+        "baths": "Baths: 1.75",
+        "path": "23903.webp",
+        "title": "Kent, WA"
+    },
+    {
+        "address": "Address: 1800 Taylor Ave N #312",
+        "price": "Sell Price: $325,000",
+        "type": "Type: Condo",
+        "sqft": "SqFt: 674",
+        "beds": "Beds: 1",
+        "baths": "Baths: 1",
+        "path": "1800.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 317 Kennebeck Ave S #201",
+        "price": "Sell Price: $255,000",
+        "type": "Type: Condo",
+        "sqft": "SqFt: 1,104",
+        "beds": "Beds: 2",
+        "baths": "Baths: 1.75",
+        "path": "317.webp",
+        "title": "Kent, WA"
+    },
+    {
+        "address": "Address: 2717 Western Ave #8014",
+        "price": "Rent Price: $1,895",
+        "type": "Type: Rent",
+        "sqft": "SqFt: 720",
+        "beds": "Beds: 1",
+        "baths": "Baths: 1",
+        "path": "2717.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 24435 130th Place SE",
+        "price": "Sell Price: $538,500",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,970",
+        "beds": "Beds: 4",
+        "baths": "Baths: 2.25",
+        "path": "24435.webp",
+        "title": "Kent, WA"
+    },
+    {
+        "address": "Address: 6026 44th Ave SW",
+        "price": "Sell Price: $830,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,850",
+        "beds": "Beds: 3",
+        "baths": "Baths: 2.25",
+        "path": "6026.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 145 33rd St",
+        "price": "Sell Price: $625,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,519",
+        "beds": "Beds: 6",
+        "baths": "Baths: 2.75",
+        "path": "145.webp",
+        "title": "Bellingham, WA"
+    },
+    {
+        "address": "Address: 2716 Fairmount Ave SW",
+        "price": "Sell Price: $493,500",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,240",
+        "beds": "Beds: 1",
+        "baths": "Baths: 1",
+        "path": "2716.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 29245 154th Ave SE",
+        "price": "Sell Price: $410,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,600",
+        "beds": "Beds: 3",
+        "baths": "Baths: 1",
+        "path": "29245.webp",
+        "title": "Kent, WA"
+    },
+    {
+        "address": "Address: 6700 NE 182nd St #C-202",
+        "price": "Sell Price: $215,000",
+        "type": "Type: Condo",
+        "sqft": "SqFt: 532",
+        "beds": "Beds: 1",
+        "baths": "Baths: 1",
+        "path": "6700.webp",
+        "title": "Kenmore, WA"
+    },
+    {
+        "address": "Address: 3711 SW Prescott Place",
+        "price": "Sell Price: $1,749,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 3,450",
+        "beds": "Beds: 5",
+        "baths": "Baths: 3.25",
+        "path": "3711.webp",
+        "title": "Seattle, WA"
+    },
+    {
+        "address": "Address: 192 Lake Francis Rd",
+        "price": "Sell Price: $25,000",
+        "type": "Type: Lot",
+        "sqft": "SqFt: 35,086",
+        "beds": "Beds: N/A",
+        "baths": "Baths: N/A",
+        "path": "192.webp",
+        "title": "Maple Valley, WA"
+    },
+    {
+        "address": "Address: 16008 SE 164th Place",
+        "price": "Sell Price: $565,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,670",
+        "beds": "Beds: 6",
+        "baths": "Baths: 3",
+        "path": "16008.webp",
+        "title": "Renton, WA"
+    },
+    {
+        "address": "Address: 5813 E M St",
+        "price": "Sell Price: $267,550",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,148",
+        "beds": "Beds: 4",
+        "baths": "Baths: 2",
+        "path": "5813.webp",
+        "title": "Tacoma, WA"
+    },
+    {
+        "address": "Address: 4553 S 190th Lane",
+        "price": "Sell Price: $480,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,050",
+        "beds": "Beds: 3",
+        "baths": "Baths: 2",
+        "path": "4553.webp",
+        "title": "Seatac, WA"
+    }
+]

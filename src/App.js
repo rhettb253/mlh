@@ -14,10 +14,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/prevtrans" element={<PrevTrans />}></Route>
+        <Route path="/ftbr" element={<FTBR />}></Route>
         <Route path="/management" element={<PropMgmt />}></Route>
-        <Route path="/prevtrans" element={<FTBR />}></Route>
-        <Route path="/ftbr" element={<About />}></Route>
-        <Route path="/about" element={<PrevTrans />}></Route>
+        <Route path="/about" element={<About />}></Route>
       </Routes>
       <Footer />
     </>
