@@ -5,7 +5,7 @@ import NavBar from './NavBar';
 function Header() {
     return (
         <div className="header">
-            <img src={realitorimg} alt="realitor" />
+            <img className='shadow-5-strong' src={realitorimg} alt="realitor" />
             <div>
                 <h2>"Together we'll get you to the place you want to be."</h2>
                 <NavBar />
