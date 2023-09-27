@@ -1,17 +1,16 @@
 import "./About.css";
-import Accordion from "react-bootstrap/Accordion";
 import { Link } from "react-router-dom";
 import {
-  MDBContainer
+  MDBContainer,
+  MDBAccordion, 
+  MDBAccordionItem
 } from "mdb-react-ui-kit";
 
 function About() {
   return (
     <MDBContainer>
-      <Accordion defaultActiveKey="0" className="accord opacity-75 ">
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>BIO & ASSERTIONS</Accordion.Header>
-          <Accordion.Body>
+      <MDBAccordion initialActive={1}>
+        <MDBAccordionItem collapseId={1} headerTitle='BIO & ASSERTIONS'>
             Desiring to help people and build lasting relationships is at the
             heart of all I do. Born and raised in the Tri-Cities area of Eastern
             Washington, with a lifelong passion for volunteering in the
@@ -33,11 +32,8 @@ function About() {
             eye for detail, not to mention my track record of closed sales and
             happy clients, I believe I offer the complete package to help you
             make this large and important transaction a successful one.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>TOP VALUE PROMISES</Accordion.Header>
-          <Accordion.Body>
+        </MDBAccordionItem>
+        <MDBAccordionItem collapseId={2} headerTitle='TOP VALUE PROMISES'>
             <strong>
               Here are my 5 promises to help you get the most value at the top
               of the range:
@@ -63,11 +59,8 @@ function About() {
             <br />
             5. I’m your transaction manager. There are a lot of moving parts. My
             job is to handle those parts so your contract closes on time.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="2">
-          <Accordion.Header>PROCESSES</Accordion.Header>
-          <Accordion.Body>
+        </MDBAccordionItem>
+        <MDBAccordionItem collapseId={3} headerTitle='PROCESSES'>
             <strong>
               {" "}
               If we work together, the following items will be arranged for you
@@ -169,9 +162,8 @@ function About() {
             buyers waiting. We want the most active agents to get special
             notifications of your home’s availability. I accomplish this through
             phone call and email marketing.
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
+        </MDBAccordionItem>
+      </MDBAccordion>
       <div className="bio">
         <h3>Let's Do This!</h3>
         <p className="indent">

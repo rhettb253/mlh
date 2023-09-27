@@ -1,0 +1,15 @@
+.bio {
+    /* background-color: rgb(230, 229, 225); */
+    background-image: linear-gradient(to bottom, rgb(230, 229, 225) 0 3.5rem, rgb(252, 251, 248) 3.5rem 100%);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 2rem auto;
+}
+
+.bio h3 {
+    width: fit-content;
+    background-image: linear-gradient(to right, rgb(3, 189, 246) 0 35%, yellow 65% 100%);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+}
