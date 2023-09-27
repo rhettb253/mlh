@@ -8,7 +8,7 @@ import {
   MDBModalBody,
   MDBModalFooter,
 } from 'mdb-react-ui-kit';
-import soldArray from "../soldArray.json";
+// import soldArray from "../soldArray.json";
 
 export default function Modal(props) {
 //   const [basicModal, setBasicModal] = useState(false);
