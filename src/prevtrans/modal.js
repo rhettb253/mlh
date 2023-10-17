@@ -7,35 +7,48 @@ import {
   MDBModalTitle,
   MDBModalBody,
   MDBModalFooter,
-} from 'mdb-react-ui-kit';
-// import soldArray from "../soldArray.json";
+} from "mdb-react-ui-kit";
 
 export default function Modal(props) {
-//   const [basicModal, setBasicModal] = useState(false);
-
   const toggleShow = () => props.setBasicModal(!props.basicModal);
 
-  console.log(props.MDBCard);
   return (
     <>
-      {/* <MDBBtn onClick={toggleShow}>LAUNCH DEMO MODAL</MDBBtn> */}
-      <MDBModal show={props.basicModal} setShow={props.setBasicModal} tabIndex='-1'>
-        <MDBModalDialog>
-          <MDBModalContent>
-            <MDBModalHeader>
-              <MDBModalTitle>Modal title</MDBModalTitle>
-              <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
-            </MDBModalHeader>
-            <MDBModalBody>...</MDBModalBody>
+      {props.modalItem && (
+        <MDBModal
+          show={props.basicModal}
+          setShow={props.setBasicModal}
+          tabIndex="-1"
+        >
+          <MDBModalDialog>
+            <MDBModalContent>
+              <MDBModalHeader>
+                <MDBModalTitle>{props.modalItem.title}</MDBModalTitle>
+                <MDBBtn
+                  className="btn-close"
+                  color="none"
+                  onClick={toggleShow}
+                ></MDBBtn>
+              </MDBModalHeader>
+              <MDBModalBody>
+                <aside>
+                  <p>{props.modalItem.address}</p>
+                  <p>{props.modalItem.price}</p>  
+                  <p>{props.modalItem.type}</p>
+                  <p>{props.modalItem.sqft}</p>  
+                  <p>{props.modalItem.beds}</p>  
+                  <p>{props.modalItem.baths}</p>
+                </aside>
+                <img src={require("../images/properties/" + props.modalItem.path)} alt='front of house'></img>
+              </MDBModalBody>
 
-            <MDBModalFooter>
-              <MDBBtn onClick={toggleShow}>
-                Close
-              </MDBBtn>
-            </MDBModalFooter>
-          </MDBModalContent>
-        </MDBModalDialog>
-      </MDBModal>
+              <MDBModalFooter>
+                <MDBBtn onClick={toggleShow}>Close</MDBBtn>
+              </MDBModalFooter>
+            </MDBModalContent>
+          </MDBModalDialog>
+        </MDBModal>
+      )}
     </>
   );
 }
