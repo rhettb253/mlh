@@ -28,7 +28,7 @@ function NavBar() {
                 </MDBNavbarToggler>
 
                 <MDBCollapse navbar show={showNavNoTogglerSecond}>
-                    <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+                    <MDBNavbarNav className='mr-auto mb-2 mb-lg-0 justify-content-center'>
                         <MDBNavbarItem>
                             <MDBNavbarLink active aria-current='page'>
                                 <Link to="/">HOME</Link>
@@ -39,11 +39,11 @@ function NavBar() {
                                 <Link to="/prevtrans">PREVIOUS TRANSACTIONS</Link>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
-                        <MDBNavbarItem>
+                        {/* <MDBNavbarItem>
                             <MDBNavbarLink>
                                 <Link to="/ftbr">FIRST TIME BUYER RESOURCES</Link>
                             </MDBNavbarLink>
-                        </MDBNavbarItem>
+                        </MDBNavbarItem> */}
                         <MDBNavbarItem>
                             <MDBNavbarLink>
                                 <Link to="/about">ABOUT ME</Link>
