@@ -62,6 +62,7 @@ function Home() {
         // Check the response and show success message
         if (response.status === 200) {
         alert('Form submitted successfully!');
+        console.log(response.data);
         }
       } catch (error) {
         console.error('Error submitting the form', error);
