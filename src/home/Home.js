@@ -61,12 +61,12 @@ function Home() {
         
         // Check the response and show success message
         if (response.status === 200) {
-        alert('Form submitted successfully!');
+        alert('Email sent successfully!');
         console.log(response.data);
         }
       } catch (error) {
         console.error('Error submitting the form', error);
-        alert(`Error, ${error.message}`);
+        alert(`Error, ${error.message}. Email not sent, please refresh and try again.`);
       }
   }, [state])
 
