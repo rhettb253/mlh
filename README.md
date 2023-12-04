@@ -4,11 +4,28 @@ Welcome to Mallory Layne Homes, a React application designed for a real estate a
 
 ## Table of Contents
 
+- Application Overview
 - Installation
 - Usage
 - Dependencies
 - Scripts
-- Application Overview
+
+### Application Overview
+
+Mallory Layne Homes is a real estate application with the following key features:
+
+#### Home Page:
+
+- Quick bio
+- Contact Form
+
+#### Previous Transactions
+
+- List of previous properties sold/bought
+
+#### About Page
+
+- Information about the real estate agent.
 
 ### Installation
 
@@ -51,22 +68,5 @@ The following npm scripts are available for managing the application:
 - start: Run the application in development mode.
 - build: Build the application for production.
 - test: Run tests using the Jest testing framework.
-
-### Application Overview
-
-Mallory Layne Homes is a real estate application with the following key features:
-
-#### Home Page:
-
-- Quick bio
-- Contact Form
-
-#### Previous Transactions
-
-- List of previous properties sold/bought
-
-#### About Page
-
-- Information about the real estate agent.
 
 Feel free to explore the application, and don't hesitate to reach out if you have any questions or feedback!
