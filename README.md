@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Mallory Layne Homes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Mallory Layne Homes, a React application designed for a real estate agent to get in contact with prospective client, showcase their previously sold homes, and provide information about their services.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- Application Overview
+- Installation
+- Usage
+- Dependencies
+- Scripts
 
-### `npm start`
+### Application Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Mallory Layne Homes is a real estate application with the following key features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Home Page:
 
-### `npm test`
+- Quick bio
+- Contact Form
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Previous Transactions
 
-### `npm run build`
+- List of previous properties sold/bought
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### About Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Information about the real estate agent.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+To get started with Mallory Layne Homes, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```git clone https://github.com/rhettb253/mlh.git```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Change into the project directory:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```cd mlh```
 
-## Learn More
+#### Install the dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```npm install```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Usage
 
-### Code Splitting
+After the installation, you can run the application using the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```npm start```
 
-### Analyzing the Bundle Size
+This will start the development server, and you can access the application at <http://localhost:3000> in your web browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Dependencies
 
-### Making a Progressive Web App
+Mallory Layne Homes relies on the following key dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React: A JavaScript library for building user interfaces.
+- Bootstrap: A popular front-end framework for designing responsive and stylish web pages.
+- MDB React UI Kit: Material Design for Bootstrap components built with React.
+- React Router: A library for adding navigation and routing functionality to React applications.
 
-### Advanced Configuration
+For a complete list of dependencies and their versions, refer to the package.json file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Scripts
+The following npm scripts are available for managing the application:
 
-### Deployment
+- start: Run the application in development mode.
+- build: Build the application for production.
+- test: Run tests using the Jest testing framework.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to explore the application, and don't hesitate to reach out if you have any questions or feedback!

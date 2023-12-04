@@ -15,31 +15,40 @@ import Modal from "./modal";
 
 function PrevTrans() {
   const [basicModal, setBasicModal] = useState(false);
-  const toggleShow = () => setBasicModal(!basicModal);
+  const [modalItem, setModalItem] = useState();
+  const toggleShow = (e) => {
+    setModalItem(() => {
+      let index = Number(e.target.id);
+      return soldArray[index];
+    });
+    setBasicModal(!basicModal);
+  };
 
   return (
     <MDBContainer className="prevtrans">
       <h2>Previous Transactions</h2>
       <div>
         {soldArray.map((property, idx) => (
-          <MDBBtn onClick={toggleShow} color="translucent" style={{borderRadius: "35%", boxShadow: "none"}}>
+          <MDBBtn onClick={toggleShow} key={idx} id={idx} color="translucent" style={{borderRadius: "35%", boxShadow: "none"}}>
             <MDBCard
-              key={idx}
+              id={idx}
               style={{ width: "18rem", borderRadius: "35%" }}
-              classname="card"
+              // className="card"
             >
               <MDBRipple
                 rippleColor="light"
                 rippleTag="div"
                 className="bg-image hover-overlay"
               >
-                <MDBCardBody>
-                  <MDBCardTitle>{property.title}</MDBCardTitle>
-                  <MDBCardText className="mb-2 text-muted">
+                <MDBCardBody id={idx}>
+                  <MDBCardTitle id={idx}>{property.title}</MDBCardTitle>
+                  <MDBCardText id={idx} className="mb-2 text-muted">
                     {property.address.split(" ").splice(1).join(" ")}
                   </MDBCardText>
                   <MDBCardImage
+                    id={idx}
                     src={require("../images/properties/" + property.path)}
+                    alt='front of house'
                   />
                 </MDBCardBody>
               </MDBRipple>
@@ -50,7 +59,7 @@ function PrevTrans() {
       <Modal
         basicModal={basicModal}
         setBasicModal={setBasicModal}
-        property={MDBCard.key}
+        modalItem={modalItem}
       />
     </MDBContainer>
   );
