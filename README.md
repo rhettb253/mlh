@@ -16,21 +16,21 @@ To get started with Mallory Layne Homes, follow these steps:
 
 #### Clone the repository:
 
-```bash git clone https://github.com/rhettb253/mlh.git```
+```git clone https://github.com/rhettb253/mlh.git```
 
 #### Change into the project directory:
 
-```bash cd mlh```
+```cd mlh```
 
 #### Install the dependencies:
 
-```bash npm install```
+```npm install```
 
 #### Usage
 
 After the installation, you can run the application using the following command:
 
-```bash npm start```
+```npm start```
 
 This will start the development server, and you can access the application at <http://localhost:3000> in your web browser.
 
