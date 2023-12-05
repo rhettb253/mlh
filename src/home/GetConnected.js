@@ -1,7 +1,6 @@
 import './Home.css';
 import Buyer from './Buyer';
 import Seller from './Seller';
-// import { useState } from 'react';
 
 function GetConnected(props) {
 
@@ -14,12 +13,14 @@ function GetConnected(props) {
         if (props.clientWantsTo === "buy") {
             let form = <Buyer
                 buyerInfo={props.buyerInfo}
-                updateBuyerInfo={props.updateBuyerInfo} />;
+                updateBuyerInfo={props.updateBuyerInfo} 
+                loading={props.loading} />;
             return form;
         } else if (props.clientWantsTo === 'sell') {
             let form = <Seller
                 sellerInfo={props.sellerInfo}
-                updateSellerInfo={props.updateSellerInfo} />;
+                updateSellerInfo={props.updateSellerInfo} 
+                loading={props.loading} />;
             return form;
         }
     }

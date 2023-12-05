@@ -63,6 +63,7 @@ Mallory Layne Homes relies on the following key dependencies:
 For a complete list of dependencies and their versions, refer to the package.json file.
 
 ### Scripts
+
 The following npm scripts are available for managing the application:
 
 - start: Run the application in development mode.
