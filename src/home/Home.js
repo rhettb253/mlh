@@ -91,7 +91,6 @@ function Home() {
         // success message
         setLoading(false);
         console.log(response.data);
-
         }
       } catch (error) {
         setLoading(false);
