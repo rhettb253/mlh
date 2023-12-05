@@ -4,6 +4,7 @@ import TimeframeSeller from './TimeframeSeller';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { MDBContainer } from 'mdb-react-ui-kit';
+import Processing from './Processing';
 
 function Seller(props) {
   let [showTimeframeTextArea, setShowTimeframeTextArea] = useState(false);
@@ -144,6 +145,8 @@ function Seller(props) {
         <Button type="submit" id='buyerButton'>
           Send Details
         </Button>
+        <br />
+        {props.loading && <Processing />}
       </Form>
     </MDBContainer>
   )

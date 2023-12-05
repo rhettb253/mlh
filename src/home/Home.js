@@ -2,7 +2,6 @@ import './Home.css';
 import { useState, useEffect, useCallback } from 'react';
 import Blurb from './Blurb';
 import GetConnected from './GetConnected';
-import Processing from './Processing';
 import { MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 import axios from 'axios';
 
@@ -43,13 +42,13 @@ function Home() {
     }
   })
 
-  useEffect(() => {
-    if (document.getElementById('thankYou')) {
-      if (document.getElementById('buyerButton')) {
-        document.getElementById('buyerButton').remove()
-      } else { document.getElementById('sellerButton').remove() }
-    }
-  }, [state.buyer, state.seller]);
+  // useEffect(() => {
+  //   if (document.getElementById('thankYou')) {
+  //     if (document.getElementById('buyerButton')) {
+  //       document.getElementById('buyerButton').remove()
+  //     } else { document.getElementById('sellerButton').remove() }
+  //   }
+  // }, [state.buyer, state.seller]);
 
   const sendEmail = useCallback( async (e) => {
       try {
@@ -64,14 +63,40 @@ function Home() {
         
         // Check the response and show success message
         if (response.status === 200) {
+
+        // add thank you message if email submitted
+        if (document.getElementById('warning')) {
+          let formWarningEl = document.getElementById('warning');
+          formWarningEl.remove();
+          let locationTwo = document.querySelector('.buyer') || document.querySelector('.seller');
+          let thankYouEl = document.createElement('h3');
+          thankYouEl.id = 'thankYou';
+          thankYouEl.style.color = 'limegreen';
+          thankYouEl.innerText = 'Thank you for your submission. I look forward to connecting with you soon!';
+          locationTwo.appendChild(thankYouEl);
+        } else {
+          let locationTwo = document.querySelector('.buyer') || document.querySelector('.seller');
+          let thankYouEl = document.createElement('h3');
+          thankYouEl.id = 'thankYou';
+          thankYouEl.style.color = 'limegreen';
+          thankYouEl.innerText = 'Thank you for your submission. I look forward to connecting with you soon!';
+          locationTwo.appendChild(thankYouEl);
+        }
+
+        // remove form submit botton
+        if (document.getElementById('buyerButton')) {
+          document.getElementById('buyerButton').remove()
+        } else { document.getElementById('sellerButton').remove() }
+
+        // success message
         setLoading(false);
-        alert('Email sent successfully!');
         console.log(response.data);
+
         }
       } catch (error) {
         setLoading(false);
         console.error('Error submitting the form', error);
-        alert(`Error, ${error.message}. Email not sent, please refresh and try again.`);
+        alert(`Error, ${error.message}.\nEmail not sent, please refresh and try again.`);
       }
   }, [state])
 
@@ -132,23 +157,6 @@ function Home() {
           timeframeInfo: event.target.timeframeTextArea.value
         }
       });
-      if (document.getElementById('warning')) {
-        let formWarningEl = document.getElementById('warning');
-        formWarningEl.remove();
-        let locationTwo = document.querySelector('.buyer');
-        let thankYouEl = document.createElement('h3');
-        thankYouEl.id = 'thankYou';
-        thankYouEl.style.color = 'limegreen';
-        thankYouEl.innerText = 'Thank you for your submission. I look forward to connecting with you soon!';
-        locationTwo.appendChild(thankYouEl);
-      } else {
-        let locationTwo = document.querySelector('.buyer');
-        let thankYouEl = document.createElement('h3');
-        thankYouEl.id = 'thankYou';
-        thankYouEl.style.color = 'limegreen';
-        thankYouEl.innerText = 'Thank you for your submission. I look forward to connecting with you soon!';
-        locationTwo.appendChild(thankYouEl);
-      }
     } else {
       setState({
         clientWantsTo: 'buy',
@@ -167,23 +175,6 @@ function Home() {
           timeframe: event.target.timeframe.value
         }
       });
-      if (document.getElementById('warning')) {
-        let formWarningEl = document.getElementById('warning');
-        formWarningEl.remove();
-        let locationTwo = document.querySelector('.buyer');
-        let thankYouEl = document.createElement('h3');
-        thankYouEl.id = 'thankYou';
-        thankYouEl.style.color = 'limegreen';
-        thankYouEl.innerText = 'Thank you for your submission. I look forward to connecting with you soon!';
-        locationTwo.appendChild(thankYouEl);
-      } else {
-        let locationTwo = document.querySelector('.buyer');
-        let thankYouEl = document.createElement('h3');
-        thankYouEl.id = 'thankYou';
-        thankYouEl.style.color = 'limegreen';
-        thankYouEl.innerText = 'Thank you for your submission. I look forward to connecting with you soon!';
-        locationTwo.appendChild(thankYouEl);
-      }
     }
   }
 
@@ -228,23 +219,6 @@ function Home() {
           timeframeInfo: event.target.timeframeTextArea.value
         }
       });
-      if (document.getElementById('warning')) {
-        let formWarningEl = document.getElementById('warning');
-        formWarningEl.remove();
-        let locationTwo = document.querySelector('.seller');
-        let thankYouEl = document.createElement('h3');
-        thankYouEl.id = 'thankYou';
-        thankYouEl.style.color = 'limegreen';
-        thankYouEl.innerText = 'Thank you for your submission. I look forward to connecting with you soon!';
-        locationTwo.appendChild(thankYouEl);
-      } else {
-        let locationTwo = document.querySelector('.seller');
-        let thankYouEl = document.createElement('h3');
-        thankYouEl.id = 'thankYou';
-        thankYouEl.style.color = 'limegreen';
-        thankYouEl.innerText = 'Thank you for your submission. I look forward to connecting with you soon!';
-        locationTwo.appendChild(thankYouEl);
-      }
     } else {
       setState({
         clientWantsTo: 'sell',
@@ -265,23 +239,6 @@ function Home() {
           timeframe: event.target.timeframe.value,
         }
       });
-      if (document.getElementById('warning')) {
-        let formWarningEl = document.getElementById('warning');
-        formWarningEl.remove();
-        let locationTwo = document.querySelector('.seller');
-        let thankYouEl = document.createElement('h3');
-        thankYouEl.id = 'thankYou';
-        thankYouEl.style.color = 'limegreen';
-        thankYouEl.innerText = 'Thank you for your submission. I look forward to connecting with you soon!';
-        locationTwo.appendChild(thankYouEl);
-      } else {
-        let locationTwo = document.querySelector('.seller');
-        let thankYouEl = document.createElement('h3');
-        thankYouEl.id = 'thankYou';
-        thankYouEl.style.color = 'limegreen';
-        thankYouEl.innerText = 'Thank you for your submission. I look forward to connecting with you soon!';
-        locationTwo.appendChild(thankYouEl);
-      }
     }
   }
 
@@ -297,8 +254,9 @@ function Home() {
           buyerInfo={state.buyer}
           updateBuyerInfo={updateBuyerInfo}
           sellerInfo={state.seller}
-          updateSellerInfo={updateSellerInfo} />
-        {loading && <Processing />}
+          updateSellerInfo={updateSellerInfo} 
+          loading={loading}
+        />
       </MDBRow>
     </MDBContainer>
   );
