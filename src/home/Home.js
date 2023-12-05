@@ -2,11 +2,13 @@ import './Home.css';
 import { useState, useEffect, useCallback } from 'react';
 import Blurb from './Blurb';
 import GetConnected from './GetConnected';
+import Processing from './Processing';
 import { MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 import axios from 'axios';
 
 function Home() {
 
+  let [loading, setLoading] = useState(false);
   let [state, setState] = useState({
     clientWantsTo: '',
     buyer: {
@@ -47,24 +49,27 @@ function Home() {
         document.getElementById('buyerButton').remove()
       } else { document.getElementById('sellerButton').remove() }
     }
-  });
+  }, [state.buyer, state.seller]);
 
   const sendEmail = useCallback( async (e) => {
       try {
+        setLoading(true);
         // Make a POST request to your backend API
         console.log(state);
         const response = await axios.post(
-          'http://localhost:3001/submitForm', 
+          process.env.REACT_APP_SERVER_URL, 
           state, 
           {headers: {'Content-Type': 'application/json'}}
         );
         
         // Check the response and show success message
         if (response.status === 200) {
+        setLoading(false);
         alert('Email sent successfully!');
         console.log(response.data);
         }
       } catch (error) {
+        setLoading(false);
         console.error('Error submitting the form', error);
         alert(`Error, ${error.message}. Email not sent, please refresh and try again.`);
       }
@@ -141,7 +146,6 @@ function Home() {
         let thankYouEl = document.createElement('h3');
         thankYouEl.id = 'thankYou';
         thankYouEl.style.color = 'limegreen';
-
         thankYouEl.innerText = 'Thank you for your submission. I look forward to connecting with you soon!';
         locationTwo.appendChild(thankYouEl);
       }
@@ -294,6 +298,7 @@ function Home() {
           updateBuyerInfo={updateBuyerInfo}
           sellerInfo={state.seller}
           updateSellerInfo={updateSellerInfo} />
+        {loading && <Processing />}
       </MDBRow>
     </MDBContainer>
   );

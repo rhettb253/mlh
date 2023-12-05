@@ -1,7 +1,6 @@
 import './Home.css';
 import Buyer from './Buyer';
 import Seller from './Seller';
-// import { useState } from 'react';
 
 function GetConnected(props) {
 
