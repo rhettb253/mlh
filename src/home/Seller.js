@@ -145,7 +145,6 @@ function Seller(props) {
         <Button type="submit" id='buyerButton'>
           Send Details
         </Button>
-        <br />
         {props.loading && <Processing />}
       </Form>
     </MDBContainer>
