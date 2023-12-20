@@ -41,14 +41,6 @@ function Home() {
     },
   });
 
-  // useEffect(() => {
-  //   if (document.getElementById('thankYou')) {
-  //     if (document.getElementById('buyerButton')) {
-  //       document.getElementById('buyerButton').remove()
-  //     } else { document.getElementById('sellerButton').remove() }
-  //   }
-  // }, [state.buyer, state.seller]);
-
   const sendEmail = useCallback(
     async (e) => {
       try {
