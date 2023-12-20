@@ -77,8 +77,45 @@ h3.h3 {
     transform: scale(0.9) perspective(1px);
 }
 
+@media only screen and (max-width: 600px) {
+    .question1 h2 {
+        font-size: 1.5rem;
+    }
+    .buyer h3.question2 {
+        font-size: 1.3rem;
+    }
+    .buyer h5 {
+        font-size: 1.1rem;
+    }
+    .seller h3.question2 {
+        font-size: 1.3rem;
+    }
+    .seller h5 {
+        font-size: 1.1rem;
+    }
+}
+
 @media only screen and (max-width: 550px) {
     .blurb p:first-child {
         margin-top: 1rem;
+    }
+    .blurb p {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    .header h2 {
+        font-size: 1.25rem;
+    }
+    .header img {
+        height: 10.25rem;
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .header h2 {
+        font-size: 1rem;
     }
 }
