@@ -25,16 +25,16 @@ function Seller(props) {
       <h5>Please tell me about the home you would like to sell:</h5>
       <Form id="sellerform" onSubmit={props.updateSellerInfo}>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="House" id='house' name='house' value='house' defaultChecked />
+          <Form.Check type="radio" label="House" id='house' name='propertyType' value='house' defaultChecked />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Townhome" id='townhome' name='townhome' value='townhome' />
+          <Form.Check type="radio" label="Townhome" id='townhome' name='propertyType' value='townhome' />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Condo" id='condo' name='condo' value='condo' />
+          <Form.Check type="radio" label="Condo" id='condo' name='propertyType' value='condo' />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Multi-family" id='multifamily' name='multifamily' value='multifamily' />
+          <Form.Check type="radio" label="Multi-family" id='multifamily' name='propertyType' value='multifamily' />
         </Form.Group>
 
         <Form.Group className="mb-3">
