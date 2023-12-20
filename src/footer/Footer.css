@@ -8,3 +8,11 @@
     min-height: 10rem;
     margin-top: 10%;
 }
+
+@media only screen and (max-width: 535px) {
+    .footer {
+        font-size: 0.75rem;
+        min-height: 7.5rem;
+    }
+
+}

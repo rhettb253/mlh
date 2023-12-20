@@ -40,6 +40,10 @@ a:hover {
     .header h2 {
         font-size: 1.25rem;
     }
+    .header img {
+        height: 10.25rem;
+        width: 10rem;
+    }
 }
 
 @media only screen and (max-width: 425px) {
