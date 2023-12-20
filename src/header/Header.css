@@ -16,8 +16,8 @@ h3{
     font-style: italic;
 }
 
-h2{
-    font-size: 1.5rem;
+.header h2{
+    font-size: 1.75rem;
 }
 
 a {
@@ -28,4 +28,22 @@ a {
 a:hover {
     color: rgb(231, 3, 3);
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    .header h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .header h2 {
+        font-size: 1rem;
+    }
 }

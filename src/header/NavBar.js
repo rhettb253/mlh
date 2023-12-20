@@ -16,7 +16,7 @@ function NavBar() {
     const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
 
     return (
-        <MDBNavbar expand='lg' light bgColor='light' className='mt-5 py-4'>
+        <MDBNavbar expand='md' light bgColor='light' className='mt-4 py-4'>
             <MDBContainer fluid>
                 <MDBNavbarToggler
                     aria-controls='navbarSupportedContent'
