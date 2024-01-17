@@ -106,12 +106,12 @@ function Buyer(props) {
 
         <Form.Group className="mb-3" controlId="formBasicText">
           <h5>Your Full Name</h5>
-          <Form.Control type="text" name='fullName' id='fullName' placeholder="person@example.com" />
+          <Form.Control type="text" name='fullName' id='fullName' placeholder="Jane Doe" />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <h5>Your Email address</h5>
-          <Form.Control type="email" name='email' id='email' placeholder="Jane Doe" />
+          <Form.Control type="email" name='email' id='email' placeholder="person@example.com" />
           <Form.Text className="text-muted">
             We'll never share your details with anyone else.
           </Form.Text>
