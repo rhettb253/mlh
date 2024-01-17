@@ -1,5 +1,35 @@
 [
     {
+        "address": "Address: 1301 S Underwood St",
+        "price": "Sell Price: $345,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 2,430",
+        "beds": "Beds: 5",
+        "baths": "Baths: 3",
+        "path": "1301.webp",
+        "title": "Kennewick, WA"
+    },
+    {
+        "address": "Address: 1040 Pomona St",
+        "price": "Sell Price: $259,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,506",
+        "beds": "Beds: 3",
+        "baths": "Baths: 1",
+        "path": "1040.webp",
+        "title": "Walla Walla, WA"
+    },
+    {
+        "address": "Address: 619 E Wapato Ave",
+        "price": "Sell Price: $545,000",
+        "type": "Type: Residential",
+        "sqft": "SqFt: 1,280",
+        "beds": "Beds: 3",
+        "baths": "Baths: 3",
+        "path": "619.webp",
+        "title": "Chelan, WA"
+    },
+    {
         "address": "Address: 801 19th Lane W",
         "price": "Sell Price: $2,700,000",
         "type": "Type: Residential",
