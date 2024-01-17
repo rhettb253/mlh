@@ -8,7 +8,8 @@ function Blurb() {
             <h1>MALLORY LAYNE WEITZ</h1>
             <div>
                 <p>Hi!</p>
-                <p className="indent">I am a home grown realitor servicing multiple areas in the state of Washington. I have lived in Seattle for ten years and the last five I have been a realitor firmly planted in the Seattle Metropolitan area. This year I switched brokerages which allows me to service my roots back in the Tri-Cities of Eastern Washington where I spent the first 24 years of my life. Both areas of Washington are very familiar to me which enables me to provide comprehensive service to my prospective clients of both areas! I have accomplished a lot in my years as a realitor, you can see my <Link to="/prevtrans">previous transactions</Link> here or click the link at the top. If you would like me to reach out to you or send you some interesting homes that match your desired criteria I'd be happy to start looking for you! Just fill out the form below.</p>
+                <p className="indent">Born and raised in Washington, I am a neighborhood expert and real estate advisor who has been serving the state from east to west for over 5 years. Local knowledge combined with negotiation skills, strategic marketing, financial savviness, and a meticulous eye for detail, I proudly and successfully help clients reach their goals throughout the buying or selling process.</p>
+                <p>Click here to view my list of <Link to="/prevtrans">happy client transactions</Link>, and fill out the form below to start turning your dream into an address. 😊</p>
             </div>
         </div>
     );
