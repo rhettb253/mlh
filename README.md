@@ -2,6 +2,10 @@
 
 Welcome to Mallory Layne Homes, a React application designed for a real estate agent to get in contact with prospective client, showcase their previously sold homes, and provide information about their services.
 
+## Live Site
+
+[MalloryLayneHomes.com](www.mallorylaynehomes.com)
+
 ## Table of Contents
 
 - Application Overview
